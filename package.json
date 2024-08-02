@@ -1,0 +1,52 @@
+{
+  "name": "ivl-react",
+  "version": "0.1.0",
+  "type": "module",
+  "author": {
+    "name": "Oskar Voorel",
+    "email": "oskar@voorel.com"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oskar-V/ivl-react.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/Oskar-V/ivl-react/issues/new"
+  },
+  "description": "React HTML elements wrappers for ivl",
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/Oskar-V/ivl-react",
+  "keywords": [
+    "validation",
+    "typescript",
+    "schema",
+    "input",
+    "react"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./lib && bun run build.mjs",
+    "prepublishOnly": "bun run build"
+  },
+  "sideEffects": "false",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.3",
+    "bun-plugin-dts": "^0.2.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "ivl": "^0.2.6",
+    "react": "^18.3.1"
+  }
+}
